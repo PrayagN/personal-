@@ -792,12 +792,15 @@
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
-              swal({
-                    title: "Thank you!",
-                    text: "your message has been sent!",
-                    icon: "success",
-                    button: "Aww yiss!",
-                  });
+             swal({
+       title: "Good job", 
+       text: "You clicked the button!", 
+       type: "success"
+     },
+   function(){ 
+       location.reload();
+   }
+);
 
                   
            
